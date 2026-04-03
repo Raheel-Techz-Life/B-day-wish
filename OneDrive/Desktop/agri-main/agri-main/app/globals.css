@@ -1,0 +1,143 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Warm Beige + Dark Forest Theme - Improved Contrast */
+  --bg-page: #F5F0E8;
+  --bg-card: #FFFCF7;
+  --border: #D9CCC0;
+  --text-dark: #1A140E;
+  --text-mid: #54483B;
+  --text-muted: #6B5D50;
+  --green: #5D8F1A;
+  --green-bg: #E8F1D5;
+  --amber: #7A4409;
+  --sidebar-bg: #192320;
+  --sidebar-active: #2D5433;
+  --sidebar-text: #9DB59F;
+  --sidebar-text-active: #D0F0D4;
+  /* Tailwind CSS Variables */
+  --background: #F5F0E8;
+  --foreground: #1A140E;
+  --card: #FFFCF7;
+  --card-foreground: #1A140E;
+  --primary: #5D8F1A;
+  --primary-foreground: #FFFCF7;
+  --secondary: #7A4409;
+  --secondary-foreground: #FFFCF7;
+  --muted: #8B7D6E;
+  --muted-foreground: #54483B;
+  --accent: #E8F1D5;
+  --accent-foreground: #1A140E;
+  --destructive: #D32F2F;
+  --destructive-foreground: #FFFCF7;
+  --border: #D9CCC0;
+  --input: #FFFCF7;
+  --ring: #5D8F1A;
+  --sidebar: #192320;
+  --sidebar-foreground: #9DB59F;
+  --sidebar-primary: #5D8F1A;
+  --sidebar-primary-foreground: #FFFCF7;
+  --sidebar-accent: #2D5433;
+  --sidebar-accent-foreground: #D0F0D4;
+  --sidebar-border: #2D5433;
+  --sidebar-ring: #5D8F1A;
+  --popover: #FFFCF7;
+  --popover-foreground: #1A140E;
+  --chart-1: #5D8F1A;
+  --chart-2: #7A4409;
+  --chart-3: #1A140E;
+  --chart-4: #8B7D6E;
+  --chart-5: #54483B;
+  --radius: 0.625rem;
+}
+
+.light {
+  --background: #fcfcfc;
+  --foreground: #171717;
+  --primary: #72e3ad;
+}
+
+@theme inline {
+  --color-card: var(--card);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-radius: var(--radius);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-popover: var(--popover);
+  --color-primary: var(--primary);
+  --color-sidebar: var(--sidebar);
+  --color-font-mono: var(--font-mono);
+  --color-font-sans: var(--font-sans);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-font-serif: var(--font-serif);
+  --color-foreground: var(--foreground);
+  --color-destructive: var(--destructive);
+  --color-shadow-blur: var(--shadow-blur);
+  --color-shadow-color: var(--shadow-color);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-shadow-spread: var(--shadow-spread);
+  --color-letter-spacing: var(--letter-spacing);
+  --color-shadow-opacity: var(--shadow-opacity);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-card-foreground: var(--card-foreground);
+  --color-shadow-offset-x: var(--shadow-offset-x);
+  --color-shadow-offset-y: var(--shadow-offset-y);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Lora', serif;
+    color: var(--text-dark);
+  }
+  .sidebar {
+    background: var(--sidebar-bg);
+  }
+  .nav-item {
+    color: var(--sidebar-text);
+  }
+  .nav-item.active {
+    background: var(--sidebar-active);
+    color: var(--sidebar-text-active);
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .recharts-line {
+    stroke: var(--green) !important;
+  }
+  .stat-value {
+    font-family: 'Lora', serif;
+    color: var(--green);
+  }
+}
