@@ -289,7 +289,7 @@ export const videosIntro = {
 export const videos = [
   {
     type: 'file',
-    src: '/media/videos/herr.mp4', // ✏️ your video file
+    src: '/media/videos/nvm.mp4', // ✏️ your video file
     poster: '/media/posters/WhatsApp Image 2026-08-18 at 7.53.06 PM.jpeg', // ✏️ a still frame — keeps the page light
     title: 'Your cuteness', // ✏️
     caption: 'The most cutest video of you', // ✏️
