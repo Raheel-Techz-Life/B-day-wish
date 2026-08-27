@@ -38,7 +38,7 @@ export const people = {
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const loader = {
-  whisper: 'A little something I made for you…', // ✏️
+  whisper: 'Happy 19!! A little something I made for you…', // ✏️
   name: people.her,
   minDurationMs: 3000, // how long it shows at minimum — long enough to watch the flowers
   maxDurationMs: 4800, // hard cap, even on slow connections
@@ -49,10 +49,10 @@ export const loader = {
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const hero = {
-  eyebrow: 'Happy birthday', // ✏️
+  eyebrow: 'Happy 19!!', // ✏️
   title: people.her,
-  subtitle: 'For the girl who makes the distance feel a little smaller.', // ✏️
-  note: 'Scroll slowly. There’s no rush — this is all yours.', // ✏️
+  subtitle: 'Happy 19!! to the girl who makes the distance feel a little smaller.', // ✏️
+  note: 'A little birthday world for you. Scroll slowly — there’s no rush.', // ✏️
   scrollHint: 'Begin',
 }
 
@@ -176,7 +176,7 @@ I mean it this time.`,
 export const memoriesIntro = {
   label: 'Memories',
   heading: 'Moments I keep going back to', // ✏️
-  blurb: 'Tap any of them.', // ✏️
+  blurb: 'Happy 19!! Tap any memory and stay awhile.', // ✏️
 }
 
 export const memories = [
@@ -337,7 +337,7 @@ export const voiceNotes = [
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const musicIntro = {
-  label: 'Music',
+  label: 'Happy 19!! music',
   heading: 'Songs that turned into you', // ✏️
   blurb: 'Some of these I can’t hear anymore without thinking of a specific night.', // ✏️
 }
@@ -363,7 +363,7 @@ export const songs = [
 
 export const timelineIntro = {
   label: 'Our story',
-  heading: 'How we got here', // ✏️
+  heading: 'How we got here, and to Happy 19!!', // ✏️
   blurb: '', // ✏️
 }
 
@@ -400,7 +400,7 @@ export const timeline = [
   },
   {
     date: 'Today',
-    title: 'Your birthday', // ✏️
+    title: 'Happy 19!!', // ✏️
     body: 'Many many happy returns of the day, I sadly cannot attend your party but I will always be the well wisher of you even if I am not allowed to attend', // ✏️
     media: null,
   },
@@ -534,7 +534,7 @@ Come back whenever you want. It’ll all still be here — the letters, my voice
 
 Happy birthday, [HER_NAME]. Go and be impossible and wonderful. I’ll be right here.`,
 
-  closing: 'No matter how far apart we are, you’ll always have a little piece of me here.', // ✏️
+  closing: 'Happy 19!! No matter how far apart we are, you’ll always have a little piece of me here.', // ✏️
   restart: 'Read it again from the beginning',
 }
 
