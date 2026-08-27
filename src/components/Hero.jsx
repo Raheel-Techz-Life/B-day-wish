@@ -1,6 +1,7 @@
 import { hero, people, fill } from '../content'
 import { useParallax } from '../hooks/useMotion'
 import { scrollToId } from '../lib/bus'
+import Celebration from './Celebration'
 
 export default function Hero({ started }) {
   const glow = useParallax(60)
@@ -16,6 +17,8 @@ export default function Hero({ started }) {
       id="top"
       className="grain relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-5 py-24 text-center"
     >
+      <Celebration location="start" />
+
       {/* layered light — cheaper and calmer than any background video */}
       <div ref={glow} aria-hidden="true" className="absolute inset-0" style={{ transform: 'translate3d(0, var(--py, 0px), 0)' }}>
         <div className="anim-drift absolute -top-[18%] left-1/2 h-[95vmin] w-[95vmin] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(247,223,216,0)_68%)]" />
@@ -23,7 +26,7 @@ export default function Hero({ started }) {
         <div className="anim-drift absolute -left-[18%] bottom-[24%] h-[48vmin] w-[48vmin] rounded-full bg-[radial-gradient(circle,rgba(196,128,138,0.22),rgba(196,128,138,0)_70%)] [animation-delay:-14s]" />
       </div>
 
-      <div className="relative flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center">
         <p
           className="anim-fade-up text-[0.7rem] font-medium tracking-[0.42em] text-rosegold uppercase"
           style={step(0)}
@@ -31,12 +34,17 @@ export default function Hero({ started }) {
           {hero.eyebrow}
         </p>
 
-        <h1
-          className="anim-fade-up font-display mt-6 text-[clamp(3.2rem,17vw,10rem)] leading-[0.92] font-light tracking-[-0.02em] text-ink"
-          style={step(1)}
-        >
-          {fill(hero.title)}
-        </h1>
+        <div className="hero-name-wrap relative">
+          <svg className="hero-name-heart" viewBox="0 0 160 190" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M80 181C61 165 19 139 11 94C4 54 29 30 51 41C66 48 76 61 80 75C85 61 94 48 109 41C131 30 156 54 149 94C141 139 99 165 80 181Z" />
+          </svg>
+          <h1
+            className="anim-fade-up relative z-10 font-display mt-6 text-[clamp(3.2rem,17vw,10rem)] leading-[0.92] font-light tracking-[-0.02em] text-ink"
+            style={step(1)}
+          >
+            {fill(hero.title)}
+          </h1>
+        </div>
 
         <p
           className="anim-fade-up mt-7 max-w-[22ch] text-[clamp(1rem,3.6vw,1.35rem)] leading-relaxed text-balance text-ink-soft sm:max-w-[34ch]"
@@ -58,7 +66,7 @@ export default function Hero({ started }) {
         type="button"
         onClick={() => scrollToId('letter')}
         style={step(5)}
-        className="anim-fade-up group absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 rounded-full px-6 py-3 text-[0.65rem] tracking-[0.3em] text-ink-faint uppercase transition-colors hover:text-rosegold focus-visible:text-rosegold"
+        className="anim-fade-up group absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 rounded-full px-6 py-3 text-[0.65rem] tracking-[0.3em] text-ink-faint uppercase transition-colors hover:text-rosegold focus-visible:text-rosegold"
       >
         {hero.scrollHint}
         <span

@@ -20,6 +20,25 @@ function Memory({ item, index, onOpen }) {
         isLeft ? 'md:col-start-1' : 'md:col-start-6 md:-mt-24 lg:-mt-32'
       }`}
     >
+      <span className={`gallery-doodles ${isLeft ? 'gallery-doodles-left' : 'gallery-doodles-right'}`} aria-hidden="true">
+        <span className="gallery-doodle-heart">♡</span>
+        <span className="gallery-doodle-spark">✦</span>
+        <span className="gallery-doodle-swoop" />
+        <span className="gallery-doodle-dot gallery-doodle-dot-one" />
+        <span className="gallery-doodle-dot gallery-doodle-dot-two" />
+        <span className="gallery-doodle-balloon gallery-doodle-balloon-one" />
+        <span className="gallery-doodle-balloon gallery-doodle-balloon-two" />
+        <span className="gallery-doodle-gift">♡</span>
+      </span>
+        <span className={`gallery-birthday-gutter ${isLeft ? 'gallery-birthday-gutter-left' : 'gallery-birthday-gutter-right'}`} aria-hidden="true">
+          <span className="birthday-balloon birthday-balloon-pink">🎈</span>
+          <span className="birthday-balloon birthday-balloon-yellow">🎈</span>
+          <span className="birthday-gift">🎁</span>
+          <span className="birthday-confetti birthday-confetti-one">✦</span>
+          <span className="birthday-confetti birthday-confetti-two">✧</span>
+          <span className="birthday-confetti birthday-confetti-three">♡</span>
+        </span>
+
       <p
         className={`font-hand mb-3 text-[1.35rem] text-wine/70 ${isLeft ? '' : 'md:text-right'}`}
       >

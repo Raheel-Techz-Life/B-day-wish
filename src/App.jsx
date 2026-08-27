@@ -16,6 +16,7 @@ import Comfort from './components/Comfort'
 import OpenWhen from './components/OpenWhen'
 import Finale from './components/Finale'
 import AmbientPlayer from './components/AmbientPlayer'
+import FlowerRain from './components/FlowerRain'
 
 /** A hairline of progress along the top — the only permanent UI on the page. */
 function ScrollLine() {
@@ -66,6 +67,7 @@ export default function App() {
       </a>
 
       <ScrollLine />
+      <FlowerRain />
 
       <main>
         <Hero started={!loading} />

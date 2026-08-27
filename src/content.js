@@ -73,9 +73,9 @@ export const letter = {
 
 
   // ✏️ [INSERT PERSONAL LETTER HERE] — replace everything between the backticks.
-  body: `My love,
+  body: `My Zainab,
 
-I’ve started writing this about nine times.
+I’ve started writing this about 4-5 times.
 
 Every version felt too small.
 
@@ -148,6 +148,8 @@ Until then, keep a little piece of me here.
 I love you.
 
 Happy birthday. ❤️
+
+Stay blessed, stay happy, and stay you.
 
 And yes—
 
@@ -544,8 +546,8 @@ Happy birthday, [HER_NAME]. Go and be impossible and wonderful. I’ll be right 
 
 export const ambient = {
   enabled: true,
-  src: '/media/music/ambient.mp3', // ✏️ a soft instrumental you own or have rights to
-  label: 'Play something soft in the background',
+  src: '/media/voice/hbd.mpeg', // ✏️ the birthday theme song
+  label: 'Play the birthday theme song',
   volume: 0.35,
 }
 

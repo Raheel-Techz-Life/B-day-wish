@@ -3,6 +3,7 @@ import { scrollToId } from '../lib/bus'
 import { useParallax } from '../hooks/useMotion'
 import Reveal from './Reveal'
 import { Ornament } from './Section'
+import Celebration from './Celebration'
 
 export default function Finale() {
   const glow = useParallax(40)
@@ -12,6 +13,8 @@ export default function Finale() {
       id="finale"
       className="grain relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-cream px-5 py-24 text-center"
     >
+      <Celebration location="end" />
+
       <div
         ref={glow}
         aria-hidden="true"
@@ -21,7 +24,7 @@ export default function Finale() {
         <div className="anim-drift absolute bottom-[-24%] left-1/2 h-[85vmin] w-[85vmin] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(247,223,216,0.9),rgba(247,223,216,0)_70%)]" />
       </div>
 
-      <div className="relative mx-auto max-w-2xl">
+      <div className="relative z-10 mx-auto max-w-2xl">
         <div className="space-y-6">
           {paragraphs(finale.message).map((line, i) => (
             <Reveal

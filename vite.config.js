@@ -8,6 +8,11 @@ export default defineConfig({
   // and even when opened from a sub-folder.
   base: './',
   plugins: [react(), tailwindcss()],
+  server: {
+    watch: {
+      ignored: ['**/public/media/voice/hbd.mpeg'],
+    },
+  },
   build: {
     // Small inline limit so we never bloat the HTML/JS with base64 media.
     assetsInlineLimit: 2048,
