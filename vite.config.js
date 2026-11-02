@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     watch: {
-      ignored: ['**/public/media/voice/hbd.mpeg'],
+      ignored: ['**/public/media/**'],
     },
   },
   build: {

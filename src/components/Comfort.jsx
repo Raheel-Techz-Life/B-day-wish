@@ -2,6 +2,7 @@ import { comfort, paragraphs, people } from '../content'
 import { emit, scrollToId } from '../lib/bus'
 import Section, { Eyebrow, Ornament } from './Section'
 import Reveal from './Reveal'
+import Breathe from './Breathe'
 
 /** Give the smooth scroll a moment to land before we act on the target. */
 const afterScroll = (fn) => setTimeout(fn, 620)
@@ -62,6 +63,10 @@ export default function Comfort() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal variant="up" delay={160} className="mt-12 flex justify-center">
+          <Breathe />
+        </Reveal>
 
         {comfort.actions?.length > 0 && (
           <Reveal variant="up" delay={180} className="mt-12 flex flex-wrap justify-center gap-3">

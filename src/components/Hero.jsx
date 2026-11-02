@@ -21,9 +21,9 @@ export default function Hero({ started }) {
 
       {/* layered light — cheaper and calmer than any background video */}
       <div ref={glow} aria-hidden="true" className="absolute inset-0" style={{ transform: 'translate3d(0, var(--py, 0px), 0)' }}>
-        <div className="anim-drift absolute -top-[18%] left-1/2 h-[95vmin] w-[95vmin] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(247,223,216,0)_68%)]" />
-        <div className="anim-drift absolute -right-[22%] bottom-[6%] h-[62vmin] w-[62vmin] rounded-full bg-[radial-gradient(circle,rgba(238,201,196,0.6),rgba(238,201,196,0)_70%)] [animation-delay:-8s]" />
-        <div className="anim-drift absolute -left-[18%] bottom-[24%] h-[48vmin] w-[48vmin] rounded-full bg-[radial-gradient(circle,rgba(196,128,138,0.22),rgba(196,128,138,0)_70%)] [animation-delay:-14s]" />
+        <div className="hero-glow anim-drift absolute -top-[18%] left-1/2 h-[95vmin] w-[95vmin] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(247,223,216,0)_68%)]" />
+        <div className="hero-glow anim-drift absolute -right-[22%] bottom-[6%] h-[62vmin] w-[62vmin] rounded-full bg-[radial-gradient(circle,rgba(238,201,196,0.6),rgba(238,201,196,0)_70%)] [animation-delay:-8s]" />
+        <div className="hero-glow anim-drift absolute -left-[18%] bottom-[24%] h-[48vmin] w-[48vmin] rounded-full bg-[radial-gradient(circle,rgba(196,128,138,0.22),rgba(196,128,138,0)_70%)] [animation-delay:-14s]" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center">

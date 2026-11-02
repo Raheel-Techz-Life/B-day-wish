@@ -321,12 +321,12 @@ export const voiceIntro = {
 
 export const voiceNotes = [
   {
-    src: '/media/voice/WhatsApp Audio 2026-08-23 at 5.05.08 PM.mpeg', // ✏️
+    src: '/media/voice/birthday-message.m4a', // ✏️
     title: 'Happy birthday, Zainuu...', // ✏️
     hint: 'Play this one first.', // ✏️
   },
   {
-    src: '/media/voice/downs.mpeg', // ✏️
+    src: '/media/voice/loud-nights.m4a', // ✏️
     title: 'For the nights it gets loud in your head', // ✏️
     hint: 'Headphones. Lights off.', // ✏️
   },
@@ -559,7 +559,7 @@ Happy birthday, [HER_NAME]. Go and be impossible and wonderful. I’ll be right 
 
 export const ambient = {
   enabled: true,
-  src: '/media/voice/hbd.mpeg', // ✏️ the birthday theme song
+  src: '/media/music/birthday-theme.m4a', // ✏️ the birthday theme song
   label: 'Play the birthday theme song',
   volume: 0.35,
 }

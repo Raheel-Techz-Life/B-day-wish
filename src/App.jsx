@@ -17,6 +17,8 @@ import OpenWhen from './components/OpenWhen'
 import Finale from './components/Finale'
 import AmbientPlayer from './components/AmbientPlayer'
 import FlowerRain from './components/FlowerRain'
+import NightToggle from './components/NightToggle'
+import Resume from './components/Resume'
 
 /** A hairline of progress along the top — the only permanent UI on the page. */
 function ScrollLine() {
@@ -83,6 +85,8 @@ export default function App() {
 
       <Finale />
       <AmbientPlayer />
+      <NightToggle />
+      <Resume ready={!loading} />
 
       <Lightbox
         items={memories}

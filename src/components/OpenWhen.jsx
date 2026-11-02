@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { openWhen, openWhenIntro, paragraphs, people } from '../content'
 import { on } from '../lib/bus'
+import { load, save } from '../lib/store'
 import Section, { SectionHeading } from './Section'
 import Reveal from './Reveal'
 
@@ -91,11 +92,17 @@ function LetterDialog({ card, onClose }) {
 
 export default function OpenWhen() {
   const [activeKey, setActiveKey] = useState(null)
-  const [opened, setOpened] = useState(() => new Set())
+  // Remembered across visits, so a letter she's read stays marked as read.
+  const [opened, setOpened] = useState(() => new Set(load('opened-letters', [])))
 
   const open = useCallback((key) => {
+    if (!key) return
     setActiveKey(key)
-    setOpened((prev) => new Set(prev).add(key))
+    setOpened((prev) => {
+      const next = new Set(prev).add(key)
+      save('opened-letters', [...next])
+      return next
+    })
   }, [])
 
   // The Comfort section can open a specific letter.

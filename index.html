@@ -15,11 +15,44 @@
     <!-- ✏️ OPTIONAL: put a favicon.png (32x32) in /public to replace the default -->
     <link rel="icon" type="image/svg+xml" href="./heart.svg" />
 
+    <!-- Installable: "Add to Home Screen" opens it like an app -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="For you" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Link preview on WhatsApp / iMessage. No names or photos, on purpose. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="For you ❤️" />
+    <meta property="og:description" content="A little something I made for you." />
+    <meta property="og:url" content="https://happy-birthday-zainuuu.vercel.app/" />
+    <meta property="og:image" content="https://happy-birthday-zainuuu.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <style>
       /* Painted before React boots so there is never a white flash. */
       html { background: #FAEAE3; }
       @media (prefers-color-scheme: dark) { html { background: #FAEAE3; } }
+      html[data-night] { background: #1d1719; }
     </style>
+    <script>
+      /* Decide 2am mode before anything paints, so night visits never flash bright. */
+      (function () {
+        try {
+          var night, o = JSON.parse(localStorage.getItem('for-her:theme') || 'null')
+          if (o && Date.now() - o.at < 288e5) night = o.mode === 'night'
+          else { var h = new Date().getHours(); night = h >= 22 || h < 6 }
+          if (night) {
+            document.documentElement.setAttribute('data-night', '')
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1d1719')
+          }
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
