@@ -38,7 +38,7 @@ export const people = {
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const loader = {
-  whisper: 'Happy 19!! A little something I made for you…', // ✏️
+  whisper: 'A little something I made for you…', // ✏️
   name: people.her,
   minDurationMs: 3000, // how long it shows at minimum — long enough to watch the flowers
   maxDurationMs: 4800, // hard cap, even on slow connections
@@ -51,7 +51,7 @@ export const loader = {
 export const hero = {
   eyebrow: 'Happy 19!!', // ✏️
   title: people.her,
-  subtitle: 'Happy 19!! to the girl who makes the distance feel a little smaller.', // ✏️
+  subtitle: 'To the girl who makes the distance feel a little smaller.', // ✏️
   note: 'A little birthday world for you. Scroll slowly — there’s no rush.', // ✏️
   scrollHint: 'Begin',
 }
@@ -176,9 +176,11 @@ I mean it this time.`,
 export const memoriesIntro = {
   label: 'Memories',
   heading: 'Moments I keep going back to', // ✏️
-  blurb: 'Happy 19!! Tap any memory and stay awhile.', // ✏️
+  blurb: 'Tap any memory and stay awhile.', // ✏️
 }
 
+// ⏳ PENDING: photos in public/ are downloadable by anyone with the link (incl. the open-hair one).
+// Ask her if that's okay, or add a passphrase gate — need the question + answer from you.
 export const memories = [
   {
     src: '/media/photos/WhatsApp Image 2026-08-18 at 7.52.19 PM (1).jpeg',
@@ -198,7 +200,7 @@ export const memories = [
     height: 1867,
     alt: 'A photo of us',
     kicker: 'The one where…',
-    caption: 'We first met and holded our hands for long times and I felt like I was home',
+    caption: 'The first time we met. We held hands for so long, and I felt like I was home',
     date: '',
     note: '',
   },
@@ -220,7 +222,7 @@ export const memories = [
     height: 1750,
     alt: 'A photo of us',
     kicker: 'My favourite version of you',
-    caption: 'I love to watch you in hijab , you just look stunning and I love to see you in it and I love to see your smile and your eyes and your everything',
+    caption: 'You look stunning in hijab. Your smile, your eyes, your everything',
     date: '',
     note: '',
   },
@@ -231,7 +233,7 @@ export const memories = [
     height: 1867,
     alt: 'A photo of us',
     kicker: 'This was the night…',
-    caption: 'When everything actually started and we were into an official relationship and I was so happy and I was so in love with you and I still am',
+    caption: 'When it all became official. I was so happy, so in love with you, and I still am',
     date: '',
     note: '',
   },
@@ -242,7 +244,7 @@ export const memories = [
     height: 1400,
     alt: 'A photo of us',
     kicker: 'Still makes me giggle',
-    caption: 'How you almost hurt your leg to send me EID pics . I\'m guilty about it yet giggle a bit when i see this pic and i love you for it',
+    caption: 'You almost hurt your leg sending me Eid pics. I feel guilty, I still giggle every time, and I love you for it',
     date: '',
     note: '',
   },
@@ -253,7 +255,7 @@ export const memories = [
     height: 1750,
     alt: 'A photo of us',
     kicker: 'Nothing special happened here',
-    caption: 'I loved this pic because i for the first time saw you in open hair and i loved it  ',
+    caption: 'The first time I saw you with your hair open, and I loved it',
     date: '',
     note: '',
   },
@@ -264,7 +266,7 @@ export const memories = [
     height: 1867,
     alt: 'A photo of us',
     kicker: 'One day this will be a very old photo',
-    caption: 'Those cat eyes with that fish face and a cute spectacles and a cute smile ',
+    caption: 'Those cat eyes, that fish face, those cute spectacles and that smile',
     date: '',
     note: '',
   },
@@ -292,13 +294,13 @@ export const videos = [
     src: '/media/videos/nvm.mp4', // ✏️ your video file
     poster: '/media/posters/WhatsApp Image 2026-08-18 at 7.53.06 PM.jpeg', // ✏️ a still frame — keeps the page light
     title: 'Your cuteness', // ✏️
-    caption: 'The most cutest video of you', // ✏️
+    caption: 'The cutest video of you', // ✏️
     aspect: '9/16',
     date: '',
   },
   {
     type: 'youtube',
-    id: 'https://youtu.be/a71xD6RyOokhttps://youtu.be/a71xD6RyOok', // ✏️ replace with your link, e.g. 'https://youtu.be/xxxxxxxxxxx'
+    id: 'https://youtu.be/a71xD6RyOok',
     title: 'A video that reminds me of you', // ✏️
     caption: 'Your fav song from back then', // ✏️
     date: '',
@@ -337,7 +339,7 @@ export const voiceNotes = [
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const musicIntro = {
-  label: 'Happy 19!! music',
+  label: 'Music',
   heading: 'Songs that turned into you', // ✏️
   blurb: 'Some of these I can’t hear anymore without thinking of a specific night.', // ✏️
 }
@@ -350,7 +352,7 @@ export const songs = [
   },
   {
     url: 'https://open.spotify.com/track/4M513o3dSYspKeT6UNJpcx?si=4d7ed1d040d24c4a', // ✏️
-    title: ' The one song I listen to when I miss you', // ✏️
+    title: 'The one song I listen to when I miss you', // ✏️
     why: 'I close my eyes and keep seeing you everywhere around me', // ✏️
   },
   
@@ -363,7 +365,7 @@ export const songs = [
 
 export const timelineIntro = {
   label: 'Our story',
-  heading: 'How we got here, and to Happy 19!!', // ✏️
+  heading: 'How we got here', // ✏️
   blurb: '', // ✏️
 }
 
@@ -377,6 +379,7 @@ export const timeline = [
   {
     date: '4 Dec 2023',
     title: 'The day I confessed my feelings', // ✏️
+    // ⏳ PENDING: body doesn't match the title. What happened when you confessed?
     body: 'We started talking regularly and realized we had a lot in common', // ✏️
     media: null,
   },
@@ -393,14 +396,16 @@ export const timeline = [
     media: null,
   },
   {
-    date: 'unknown',
+    date: 'unknown', // ⏳ PENDING: shows literally on the site. Use an approx month, e.g. 'Oct 2024'
     title: 'You tried fixing things', // ✏️
+    // ⏳ PENDING: heavy for a birthday/safe-place site. Soften to one line or move to a real conversation.
     body: 'I chose to say bad things unfortunately and I regret it every day ever since', // ✏️
     media: { type: 'image', src: '/media/photos/WhatsApp Image 2026-08-18 at 7.53.06 PM (1).jpeg', alt: 'Certain' },
   },
   {
     date: 'Today',
     title: 'Happy 19!!', // ✏️
+    // ⏳ PENDING: 'not allowed to attend' clashes with 'I'll see you soon' in the letter. Make the story consistent.
     body: 'Many many happy returns of the day, I sadly cannot attend your party but I will always be the well wisher of you even if I am not allowed to attend', // ✏️
     media: null,
   },
@@ -415,6 +420,7 @@ export const comfort = {
   label: 'For later',
   heading: 'If you’re feeling alone…', // ✏️
 
+  // ⏳ PENDING: still the template draft. Rewrite in your own voice.
   // ✏️ [COMFORT_MESSAGE]
   message: `Hey. If you’re here, it’s probably late. Or it’s probably been one of those days.
 
@@ -451,6 +457,7 @@ export const openWhen = [
   {
     key: 'miss',
     title: 'Open when you miss me',
+    // ⏳ PENDING: 'I always pick up' — keep only if true. Rewrite in your voice.
     // ✏️ [MISS_YOU_MESSAGE]
     body: `Then close your eyes for a second.
 
@@ -461,6 +468,7 @@ Missing me means it’s real. If it didn’t hurt a little, it wouldn’t have b
   {
     key: 'sad',
     title: 'Open when you’re sad',
+    // ⏳ PENDING: template draft. Rewrite in your voice.
     // ✏️ [SAD_MESSAGE]
     body: `You don’t have to explain it to me. Not the reason, not the timeline, not why it’s “silly”. It isn’t silly.
 
@@ -471,6 +479,7 @@ And if you can’t say it out loud yet — that’s fine too. I’ll wait. I’m
   {
     key: 'sleep',
     title: 'Open when you can’t sleep',
+    // ⏳ PENDING: fill [A PLACE WE'VE BEEN] — it shows literally on screen. 'wake me up' — keep only if true.
     // ✏️ [CANT_SLEEP_MESSAGE]
     body: `Okay. Here’s what we’re doing.
 
@@ -483,6 +492,7 @@ If that doesn’t work, wake me up. I mean it. I’d rather lose the sleep than 
   {
     key: 'reassurance',
     title: 'Open when you need reassurance',
+    // ⏳ PENDING: template draft. Rewrite in your voice.
     // ✏️ [REASSURANCE_MESSAGE]
     body: `Yes. Still. All of it.
 
@@ -495,6 +505,7 @@ Whatever tonight’s doubt is — the answer is you. It’s been you for a long 
   {
     key: 'smile',
     title: 'Open when you want to smile',
+    // ⏳ PENDING: fill [INSIDE JOKE] and [THAT SILLY THING SHE DOES] — they show literally on screen.
     // ✏️ [SMILE_MESSAGE]
     body: `Remember [INSIDE JOKE].
 
@@ -509,6 +520,7 @@ There it is. Told you.`,
   {
     key: 'us',
     title: 'Open when you want to remember us',
+    // ⏳ PENDING: fill [HOW WE MET] and [THE NIGHT YOU KNEW]; 'a few hundred kilometres' — fix to your real distance.
     // ✏️ [MEMORY_MESSAGE]
     body: `Us: two people who found each other at an extremely inconvenient distance and decided the map was wrong.
 
@@ -525,6 +537,7 @@ Still here. Both of us. That’s the part I’d tell people about.`,
  * ─────────────────────────────────────────────────────────────────────────── */
 
 export const finale = {
+  // ⏳ PENDING: template draft. Rewrite in your voice.
   // ✏️ [FINAL_MESSAGE]
   message: `There isn’t a clever ending for this.
 
